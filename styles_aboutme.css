@@ -1,0 +1,420 @@
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(109, 32, 133),
+        0 0 82px rgb(109, 32, 133),
+        0 0 92px rgb(109, 32, 133),
+        0 0 102px rgb(154, 9, 250),
+        0 0 151px rgb(226, 3, 255);
+  }
+
+  .neonText {
+    padding: 0%;
+    font-size: 50px;
+  }
+  
+  .neonText {
+    font-size: 20 rem;
+    animation: flicker 1.5s infinite alternate;  
+    margin : 20px;  
+    margin-left: 200px; 
+  }
+  
+  /* Flickering animation */
+  @keyframes flicker {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #57277c,
+        0 0 40px rgb(222, 129, 250),
+        0 0 80px rgb(200, 122, 236),
+        0 0 90px rgb(101, 63, 122),
+        0 0 100px rgb(109, 84, 250),
+        0 0 150px rgb(177, 136, 224);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+  
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #b89ee9;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: rgb(127, 74, 252);
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #f0bdff;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #a039c9;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+body {
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgb(58, 7, 68) 0%, rgb(29, 3, 48) 70%, rgba(0, 0, 0, 1) 98%);
+    font-size: 18px;
+    
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Cards */
+  .card-column {
+    width: 50%;
+    float: left;
+    padding: 4%;
+    box-sizing: border-box;
+  }
+  
+  .column-1 {
+    padding-top: 100px;
+  }
+  
+  .card {
+    width: 92%;
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background: #EB5160;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 60px;
+  }
+  
+  .border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+    border: 1px solid #fff;
+    opacity: 0.5;
+    left: -6px;
+    top: -6px;
+  }
+  
+  .card h1 {
+    position: relative;
+    padding: 190px 0px 100px 10px;
+    width: 90%;
+    color: #ffffff;
+    text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 15px #57277c,
+        0 0 20px rgb(222, 129, 250),
+        0 0 40px rgb(200, 122, 236),
+        0 0 40px rgb(179, 107, 221),
+        0 0 50px rgb(109, 84, 250),
+        0 0 75px rgb(177, 136, 224);
+  }
+  
+  .card > img {
+    width: 90%;
+    position: absolute;
+    top: -6%;
+    left: -6%;
+  }
+  
+  .card-color-0 {
+    background-color: #3f184b;
+  }
+  
+  .card-color-1 {
+    background-color: #8F3985;
+  }
+  
+  .card-color-2 {
+    background-color: #6349a0;
+  }
+  
+  .card-color-3 {
+    background-color: #8262a0;
+  }
+  
+  /* The cover (expanding background) */
+  .cover {
+    position: fixed;
+    background: #EB5160;
+    z-index: 100;
+    transform-origin: 50% 50%;
+  }
+  
+  /* The open page content */
+  .open-content {
+    width: 100%;
+    z-index: 110;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .open-content img {
+    position: relative;
+    width: 90%;
+    margin-left: 3%;
+    margin-top: 20px;
+    z-index: 5;
+  }
+  
+  .open-content .text {
+    background: #fff;
+    margin-top: -56%;
+    padding: 60% 5% 5% 5%;
+    width: 80%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .open-content .text h1, .open-content .text p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .close-content {
+    display: block;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .close-content span {
+    background: #ffffff;
+    
+    width: 30px;
+    height: 6px;
+    display: block;
+    position: absolute;
+    top: 14px;
+  }
+  
+  .x-1 {
+    transform: rotate(45deg);
+  }
+  
+  .x-2 {
+    transform: rotate(-45deg);
+  }
+  
+  /* 
+  ** Transitions
+  */
+  
+  .card {
+    transition: opacity 200ms linear 320ms, transform 200ms ease-out 320ms;
+  }
+  
+  .border {
+    transition: opacity 200ms linear, transform 200ms ease-out;
+  }
+  
+  .card img {
+    transition: opacity 200ms linear 0ms, transform 200ms ease-in 0ms;
+  }
+  
+  .card h1 {
+    transform: translate3d(20%, 0px, 0px);  
+    transition: opacity 200ms linear 120ms, transform 200ms ease-in 120ms;
+  }
+  
+  /* Clicked card */
+  .card.clicked img {
+    transform: translate3d(0px, -40px, 0px);
+    opacity: 0;
+  }
+  
+  .card.clicked .border {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+  
+  .card.out, .card.out img {
+    transform: translate3d(0px, -40px, 0px);
+    opacity: 0;
+  }
+  
+  .card.out h1, .card.clicked h1 {
+    transform: translate3d(20%, -40px, 0px);
+    opacity: 0;
+  }
+  
+  .cover {
+    transition: transform 300ms ease-in-out;
+  }
+  
+  .open-content {
+    transition: opacity 200ms linear 0ms;
+  }
+  
+  .open-content.open {
+    opacity: 1;
+    pointer-events: all;
+    transition-delay: 1000ms;
+  }
+  
+  /* 
+  ** Media Queries
+  */
+  
+  @media screen and (max-width: 600px) {
+    .card-column {
+      width: 90%;
+    }
+    
+    .column-1 {
+      padding-top: 0px;
+    }
+    
+    .open-content img {
+      margin-top: 40px;
+    }
+  }

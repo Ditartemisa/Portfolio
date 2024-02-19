@@ -1,28 +1,369 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
     <title>Portfolio</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+</head>
+    <style>
+        .grid-container {
+            background-color: rgb(255, 255, 255);
+        }
 
-    <!-- Optional JavaScript; choose one of the two! -->
+        #a {
+            text-decoration: none;
+        }
+
+        .carousel-item {
+            display: flex;
+            justify-content: center;
+        }
+
+        .skills-container {
+            text-align: center;
+        }
+
+        .tools-comtainer {
+            width: 100%;
+        }
+
+        .max-width-50 {
+            max-width: 40%;
+            height: auto;
+            margin: auto;
+        }
+
+/* Estilo base para los dispositivos de escritorio */
+@media (min-width: 768px) {
+    .grid-container {
+        max-width: 1200px; /* O ajusta según tus necesidades */
+        margin: 0 auto;
+    }
+
+    .profile-card__img img {
+        max-width: 100%; /* Ajusta la imagen para dispositivos de escritorio */
+        height: auto;
+    }
+
+    .profile-card__cnt {
+        text-align: center;
+    }
+
+    .container-skills,
+    .container-tools {
+        width: 80%; /* Ajusta el ancho del contenedor según tus necesidades */
+        margin: 0 auto;
+    }
+
+    .max-width-50 {
+        max-width: 100%; /* Ajusta el ancho de acuerdo a tus necesidades */
+    }
+}
+
+        
+    </style>
+
+
+   
+
+</head>
+  <header class="header">
+
+
+    <div class="container">
+            <nav role="navigation">
+                <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input type="checkbox" />
+                
+                <!--
+                Some spans to act as a hamburger.
+                
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu" style="background-color: black; opacity: 80%; border-radius: 5%;">
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./aboutMe.html"><li>About me</li></a>
+                    <a href="./resume.html"><li>Resume</li></a>
+                    <a href="https://secure.plum.io/en/p/DwaFCmeamZjPtXIb7rcggA"><li>More Info</li></a>
+                </ul>
+                </div>
+            </nav>
+        <h1 class="neonText">
+            Portfolio
+        </h1>
+    </div>
+  </header>
+<body class="grid-container">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-wrapper">
+                <div class="wrapper">
+                    <div class="profile-card js-profile-card">
+                        <div class="profile-card__img">
+                            <img src="./scr/photoProfessional.png" alt="profile card" />
+                        </div>
+
+                        <div class="profile-card__cnt js-profile-cnt" style="align-content: center;">
+                            <div class="profile-card__name">Diana Fernández Madrigal</div>
+                            <div class="profile-card__txt">
+                                FullStack Developer and Data Scientist <br> <strong>Mexico City</strong>
+                            </div>
+                            <div class="profile-text">
+                                <p>
+
+                                </p>
+                            </div>
+                            <div class="profile-card-loc" style="align-content: center;">
+                                <span class="profile-card-loc__icon">
+                                </span>
+
+                                <span class="profile-card-loc__txt">
+                                    Mexico
+                                </span>
+                            </div>
+
+                            <div class="profile-card-social">
+                                <a href="https://www.facebook.com/profile.php?id=100095145440427"
+                                    class="profile-card-social__item facebook" id="a" target="_blank">
+                                    <span class="icon-font">
+                                        <i class="fa fa-facebook-f fa-lg"></i>
+                                    </span>
+                                </a>
+
+                                <a href="https://www.instagram.com/ditacode/" class="profile-card-social__item
+                                    instagram" id="a" target="_blank">
+                                    <span class="icon-font">
+                                        <i class="fa fa-instagram fa-lg"></i></span>
+                                </a>
+
+                                <a href="https://github.com/Ditartemisa" class="profile-card-social__item github"
+                                    id="a" target="_blank">
+                                    <span class="icon-font"> <i class="fa fa-github fa-lg"></i></span>
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/diana-fern%C3%A1ndez-631827243/"
+                                    class="profile-card-social__item linkedin" id="a" target="_blank">
+                                    <span class="icon-font">
+                                        <i class="fa fa-linkedin fa-lg"></i></span>
+                                </a>
+
+                            </div>
+
+                            <div class="profile-card-ctr">
+                                <button class="profile-card__button button--blue js-message-btn">
+                                    Message
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="profile-card-message js-message">
+                            <form class="profile-card-form">
+                                <div class="profile-card-form__container">
+                                    <textarea placeholder="Say something..."></textarea>
+                                </div>
+
+                                <div class="profile-card-form__bottom">
+                                    <button class="profile-card__button button--blue js-message-close">
+                                        Send
+                                    </button>
+                                    <button class="profile-card__button button--gray js-message-close">
+                                        Cancel
+                                    </button>
+                                </div>
+                            </form>
+
+                            <div class="profile-card__overlay js-message-close"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+
+<section>
+            <div class="container-skills">
+                <div class="col-skills mx-auto">
+                    <div class="row justify-content-center">
+                        <div class="titleSkills">
+                            <h2 class="heading">Skills</h2>
+                        </div>
+                        <div class="container"> 
+                           <section class="customer-logos slider">
+                              <div class="slide"><img src="./scr/icons/Skills/2.png"></div>
+                              <div class="slide"><img src="./scr/icons/Skills/3.png"></div>
+                              <div class="slide"><img src="./scr/icons/Skills/4.png"></div>
+                              <div class="slide"><img src="./scr/icons/Skills/5.png"></div>
+                              <div class="slide"><img src="./scr/icons/Skills/6.png"></div>
+                              <div class="slide"><img src="./scr/icons/Skills/7.png"></div>
+                              <div class="slide"><img src="./scr/icons/Skills/8.png"></div>
+                              <div class="slide"><img src="./scr/icons/Skills/9.png"></div>
+                             
+                           </section>
+                          </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+
+
+<section>
+
+
+    <div class=" container-profile">
+         <div class="col">
+            
+        </div>        
+        </div>    
+    </div>    
+</section>   
+z
+<section>
+            
+
+            <div class="container-tools">
+                <div class="col-skills mx-auto">
+                    <div class="row justify-content-center">
+                        <div class="titleTools">
+                            <h2 class="heading" style="margin: 5px;">Tools</h2>
+                        </div>
+                        <div class="container">
+                           <section class="customer-logos slider">
+                              <div class="slide"><img src="./scr/icons/tools/1 (1).png"></div>
+                              <div class="slide"><img src="./scr/icons/tools/1 (10).png"></div>
+                              <div class="slide"><img src="./scr/icons/tools/1 (11).png"></div>
+                              <div class="slide"><img src="./scr/icons/tools/1 (2).png"></div>
+                              <div class="slide"><img src="./scr/icons/tools/1 (3).png"></div>
+                              <div class="slide"><img src="./scr/icons/tools/1 (4).png"></div>
+                              <div class="slide"><img src="./scr/icons/tools/1 (5).png"></div>
+                              <div class="slide"><img src="./scr/icons/tools/1 (6).png"></div>
+                              <div class="slide"><img src="./scr/icons/tools/1 (7).png"></div>
+                              <div class="slide"><img src="./scr/icons/tools/1 (8).png"></div>
+                              <div class="slide"><img src="./scr/icons/tools/1 (9).png"></div>
+                             
+                           </section>
+                          </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>  
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12" id="title">
+                <h2>Portfolio</h2>
+            </div>
+        </div>
+        <div class="row" id="portItems">
+         
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img class="img-responsive" style="height: 140px" src="./scr/projects/2024-02-18 17_47_45-.png" alt="" href="https://github.com/Ditartemisa/Encriptador.git">
+                    </div>
+                    <div class="col-xs-12 title" style="color: aliceblue;">
+                        Encriptador
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- FIFTH ITEM -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img class="img-responsive" src="./scr/projects/2024-02-18 17_55_44-Lista de Compras.png" alt="" href="https://github.com/Ditartemisa/CH37_ListaCompras.git">
+                    </div>
+                    <div class="col-xs-12 title" style="color: aliceblue;" >
+                        Lista de compras 
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIXTH ITEM -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img class="img-responsive" src="./scr/projects/2024-02-18 17_52_26-eclipse-workspace - sistemaDeVuelos_src_sistemaDeVuelos_VuelosJetAir.java - Ecli.png" alt="" href="https://github.com/Ditartemisa/Travel-System.git">
+                    </div>
+                    <div class="col-xs-12 title" style="color: aliceblue;" >
+                        Sistema de vuelos 
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEVENTH ITEM -->
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img class="img-responsive" src="./scr/projects/2024-02-18 17_55_06-.png" alt="" href="https://github.com/lizeth9797/manahuia.git">
+                    </div>
+                    <div class="col-xs-12 title" style="color: aliceblue;" >
+                        Ecommerce
+                    </div>
+                    
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+</div>
+
+<div class="row border">
+
+</div>
+
+<footer>
+<div class="row item" id="contact">
+    <div class="container">
+        <div class="row">
+            
+        </div>
+    </div>
+</div>
+
+</footer>
+</div>
+</section>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src=>  </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./main.js" defer>
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"</script>
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</script>
+</body>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-  </body>
 </html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic|Open+Sans:300,400,500,700|Waiting+for+the+Sunrise|Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./styles_resume.css">
+    <style>
+        @media only screen and (max-width: 768px) {
+            article section {
+                margin-bottom: 10px;
+            }
+
+            #sup_text .print,
+            #sup_text .pdf {
+                position: static;
+                float: none;
+                margin: 10px 0 0;
+                padding: 10px;
+                text-align: center;
+            }
+
+            #personal dl {
+                float: none;
+                margin-top: 15px;
+            }
+
+            .experience {
+                margin-top: 5px;
+            }
+        }
+
+        @media only screen and (max-width: 425px) {
+            article section {
+                margin-bottom: 10px;
+            }
+
+            #sup_text .print,
+            #sup_text .pdf {
+                position: static;
+                float: none;
+                margin: 10px 0 0;
+                padding: 10px;
+                text-align: center;
+            }
+
+            #personal dl {
+                float: none;
+                margin-top: 15px;
+            }
+
+            .experience {
+                margin-top: 5px;
+            }
+        }
+
+    .strong {
+        padding: 5px;
+        line-height: 2rem;
+    }
+    </style>
+
+    <title>Resume</title>
+</head>
+
+<body>
+    <body>
+        <div class="container">
+            <nav role="navigation">
+                <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input type="checkbox" />
+                
+                <!--
+                Some spans to act as a hamburger.
+                
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu" style="background-color: black; opacity: 80%; border-radius: 5%;">
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./aboutMe.html"><li>About me</li></a>
+                    <a href="./resume.html"><li>Resume</li></a>
+                    <a href="https://secure.plum.io/en/p/DwaFCmeamZjPtXIb7rcggA"><li>More Info</li></a>
+                </ul>
+                </div>
+            </nav>
+       
+    </div>
+    <header>
+        <div class="container">
+            <div id="sup_text">
+                <div class='pdf'>
+                    or get the
+                    <a href='https://drive.google.com/file/d/1-ag53aQPY0FQVn3GSmp35cdF8wN7psKd/view?usp=drive_link'
+                        target='_blank'>
+                        PDF format
+                        <div class='ico'></div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="personal">
+                <div class="name">
+                    <h1>Diana Fernández</h1>
+                    <h2>FullStack Developer</h2>
+                </div>
+
+                <dl>
+                    <dt>Email</dt>
+                    <dd>dianapatricia.fernandezmadrigal@gmail.com</dd>
+
+                    <dt>Phone</dt>
+                    <dd>+52 5519387611</dd>
+
+                    <dt>LinkedIn</dt>
+                    <dd><a href="https://www.linkedin.com/in/diana-fern%C3%A1ndez-631827243/" target="_blank">www.linkedin.com/in/diana-fernández</a></dd>
+                </dl>
+            </div>
+        </div>
+    </header>
+
+    <article class='experience'>
+        <article class='career cf'>
+            <h1>
+                <span class='ico'></span>
+                Professional profile
+            </h1>
+            <div class='careerhistory cf'>
+                <section class="section">
+                    <h2 class='ico work'>WORK</h2>
+                    <p><strong>FullStack Developer</strong></p>
+                    <p>Data Science Student</p>
+                    <p class='info' style="line-height: 100%;">Full Stack Junior developer with skills in problem solving and data analysis. Previously, as a teacher, I developed websites and implemented active learning strategies.</p>
+                </section>
+            </div>
+        </article>
+
+        <article class='knowledge cloud cf'>
+            <h1>
+                <span class='ico'></span>
+                Technical skills
+            </h1>
+            <ul>
+                <li class='w1'>
+                    <span>HTML5</span>
+                    <sup>(BootStrap & React)</sup>
+                </li>
+                <li class='w2'>
+                    <span> CSS3</span>
+                </li>
+                <li class='w3'>
+                    <span>JavaScript</span>
+                </li>
+                <li class='w4'>
+                    <span>Java</span>
+                </li>
+                <li class='w5'>
+                    <span>Git/GitHub</span>
+                </li>
+                <li class='w6'>
+                    <span>Python</span>
+                </li>
+                <li class='w7'>
+                    <span>SQL</span>
+                </li>
+                <li class='w8'>
+                    <span>MySQL</span>
+                </li>
+                <li class='w9'>
+                    <span>Excel</span>
+                </li>
+                <li class='w10'>
+                    <span>Visual Studio Code, Eclipse, Jupyter</span>
+                </li>
+            </ul>
+        </article>
+
+        <article class='career cf'>
+            <h1>
+                <span class='ico'></span>
+                Academic Projects
+            </h1>
+            <div class='careerhistory cf'>
+                <section>
+                    <h2 class='ico'>Academic Projects</h2>
+                    <p><strong>E-commerce | FullStack Developer | Project Manager </strong>
+                        <sup>(Mexico City, Mexico)</sup>
+                    </p>
+                    <p>
+                        Bootcamp Generation
+                        <sup>(April - 2024)</sup>
+                    </p>
+                </section>
+                <section>
+                    <h2 class='ico'>Academic Projects</h2>
+                    <p>
+                        <strong>Currency Converter</strong>
+                        <sup>(Mexico City, Mexico)</sup>
+                    </p>
+                    <p>
+                        Oracle One Education
+                        <sup>(October- 2023)</sup>
+                    </p>
+                </section>
+                <section>
+                    <h2 class='ico'>Academic Projects</h2>
+                    <p>
+                        <strong>Travel Agency</strong>
+                        <sup>(Mexico City, Mexico)</sup>
+                    </p>
+                    <p>
+                        National Autonomous University of Mexico
+                        <sup>(December- 2023)</sup>
+                    </p>
+                </section>
+            </div>
+        </article>
+
+        <article class='career cf'>
+            <h1>
+                <span class='ico'></span>
+                Professional experience
+            </h1>
+            <div class='careerhistory cf'>
+                <section>
+                    <h2 class='ico'>Professional experience</h2>
+                    <p><strong>Educational instructor | Web Development | Project Manager</strong>
+                        <sup>(Cartago, Costa Rica)</sup>
+                    </p>
+                    <p>
+                        Anglo American School
+                        <sup>(2018 - 2022)</sup>
+                    </p>
+                </section>
+                <section>
+                    <h2 class='ico'>Professional experience</h2>
+                    <p>
+                        <strong>Educational instructor and Multimedia Content Creation</strong>
+                        <sup>(Cartago, Costa Rica)</sup>
+                    </p>
+                    <p>
+                        Ministry of Public Education
+                        <sup>(2016- 2019)</sup>
+                    </p>
+                </section>
+                <section>
+                    <h2 class='ico'>Professional experience</h2>
+                    <p>
+                        <strong>Assistant in Teaching and Research</strong>
+                        <sup>(San José, Costa Rica)</sup>
+                    </p>
+                    <p>
+                        University of Costa Rica
+                        <sup>(2012-2014)</sup>
+                    </p>
+                </section>
+            </div>
+        </article>
+
+        <article class='languages cloud cf'>
+            <h1>
+                <span class='ico'></span>
+                Courses
+            </h1>
+            <ul>
+                <h2 class='ico'>Courses</h2>
+                <li class='w3'>
+                    <span>Data Analysis | Coursera | 2022-2023</span>
+                </li>
+                <li class='w3'>
+                    <span>AWS Cloud Practitioner | Mujer Digital | 2022</span>
+                </li>
+                <li class='w2'>
+                    <span>BackEnd | Oracle | 2023</span>
+                </li>
+                <li class='w2'>
+                    <span>Programming in Python| Alura | 2023</span>
+                </li>
+            </ul>
+        </article>
+
+        <article class='languages cloud cf'>
+            <h1>
+                <span class='ico'></span>
+                Languages
+            </h1>
+            <ul>
+                <li class='w3'>
+                    <span>Spanish - Native</span>
+                </li>
+                <li class='w3'>
+                    <span>English - Intermediate</span>
+                </li>
+                <li class='w2'>
+                    <span>French - Pre-intermediate</span>
+                </li>
+            </ul>
+        </article>
+
+        <article class='career cf'>
+            <h1>
+                <span class='ico'></span>
+                Educational training
+            </h1>
+            <div class='careerhistory cf'>
+                <section>
+                    <h2 class='ico'>Educational training</h2>
+                    <p><strong>Diploma in Data Sciences</strong>
+                        <sup>(Mexico City, Mexico)</sup>
+                    </p>
+                    <p>
+                        National Autonomous University of Mexico
+                        <sup>(2023 - 2024)</sup>
+                    </p>
+                </section>
+                <section>
+                    <h2 class='ico'>Educational training</h2>
+                    <p>
+                        <strong>FullStack Java Developer Training</strong>
+                        <sup>(Mexico City, Mexico)</sup>
+                    </p>
+                    <p>
+                        Generation Mexico
+                        <sup>(January-June 2024)</sup>
+                    </p>
+                </section>
+                <section>
+                    <h2 class='ico'>Educational training</h2>
+                    <p>
+                        <strong>Assistant in Teaching and Research</strong>
+                        <sup>(San José, Costa Rica)</sup>
+                    </p>
+                    <p>
+                        University of Costa Rica
+                        <sup>(2012-2014)</sup>
+                    </p>
+                </section>
+            </div>
+        </article>
+
+        <article class='knowledge cloud cf'>
+            <h1>
+                <span class='ico'></span>
+                Soft Skills
+            </h1>
+            <ul>
+                <li class='w1'>
+                    <span>Detail Orientation</span>
+                </li>
+                <li class='w2'>
+                    <span> Analytical thinking</span>
+                </li>
+                <li class='w3'>
+                    <span>Assertive communication</span>
+                </li>
+                <li class='w4'>
+                    <span>Teamwork</span>
+                </li>
+                <li class='w5'>
+                    <span>Persistence</span>
+                </li>
+                <li class='w6'>
+                    <span>Growth mentality</span>
+                </li>
+            </ul>
+        </article>
+
+    </article>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
