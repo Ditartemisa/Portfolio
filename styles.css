@@ -218,10 +218,7 @@ body {
   
   
   /* Additional styling */
-    
-  h2 {
-   font-size: 1.8rem;
-  }
+ 
   .container {
     margin-top: 20vh;
     font-size:larger;
@@ -638,25 +635,23 @@ a:hover {
   transition: all 0.3s;
 }
 
-.titleSkills
-{ 
-    display: flex;
-    height: 100%;
-    width: 100%;
-    padding: 1rem;
-    justify-content: center;
-    align-items: center;
-  }
+
   
   .heading {
-    font-size: 4vw;
-    text-shadow: 2px 2px 0px #ab6ad1;
-    mix-blend-mode: screen;
-    animation: blink 2.5s linear infinite;
-}
-h2{
-  text-align:center;
-  padding: 20px;
+    font-size: 3.5rem;
+    position: relative;
+    padding: 190px 0px 100px 10px;
+    width: 90%;
+    color: #ffffff;
+    text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 15px #57277c,
+        0 0 20px rgb(222, 129, 250),
+        0 0 40px rgb(200, 122, 236),
+        0 0 40px rgb(179, 107, 221),
+        0 0 50px rgb(109, 84, 250),
+        0 0 75px rgb(177, 136, 224);
 }
 /* Slider */
 
@@ -816,14 +811,6 @@ h2{
 
 .section {
   padding: 2rem;
-  
-  h2:first-of-type {
-    margin-top: 0;
-  }
-  
-  h3:first-of-type {
-    margin-top: 0;
-  }
 }
 
 
@@ -834,10 +821,20 @@ h2{
 
 }
 h2{
-  font-size: 4vw;
-  text-shadow: 2px 2px 0px #ab6ad1;
-  mix-blend-mode: screen;
-  animation: blink 2.5s linear infinite;
+  font-size: 5rem;
+  position: relative;
+  padding: 190px 0px 100px 10px;
+  width: 90%;
+  color: #ffffff;
+  text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 15px #af90c7,
+      0 0 20px rgb(222, 129, 250),
+      0 0 40px rgb(200, 122, 236),
+      0 0 40px rgb(179, 107, 221),
+      0 0 50px rgb(109, 84, 250),
+      0 0 75px rgb(177, 136, 224);
 }
 #portfolio #title{
   border-bottom: 5px solid rgba(0,0,20,0.4);
@@ -859,10 +856,10 @@ opacity: 0.7;
   background-color: #652897;
   color: whitesmoke;
 }
-#portItems .img-responsive{
+#portItems .img-responsive {
   margin-left: 0;
   box-shadow: 0 6px 12px rgba(0,0,0,0.19), 0 2px 2px rgba(0,0,0,0.23);
-  min-height: 100px;
+  min-height: 150px;
 }
 #portItems .title{
   background-color: #6c5086;
